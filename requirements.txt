@@ -1,3 +1,5 @@
+werkzeug
+sqlalchemy
 flask
 Flask-SQLAlchemy
 gunicorn
