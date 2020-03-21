@@ -14,11 +14,9 @@ def hello_world():
     return 'Hello World!'
 
 
-@app.route('/api')
 def main(cfg=Config):
     app = Flask(__name__)
     app.config.from_object(cfg)  # Choose from the different configs...
-
     db.init_app(app)
     app.register_blueprint(endpoint)
     return app
