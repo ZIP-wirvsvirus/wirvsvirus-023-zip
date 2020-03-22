@@ -6,8 +6,6 @@ from database.db import db
 
 from api.endpoint import endpoint
 
-app = Flask(__name__)
-
 
 @app.route('/')
 def hello_world():
@@ -21,6 +19,8 @@ def main(cfg=Config):
     app.register_blueprint(endpoint)
     return app
 
+
+app = main()
 
 if __name__ == "__main__":
     app = main()
