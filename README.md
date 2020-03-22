@@ -1,11 +1,7 @@
 Backend for wirvsvirus-023-zip
 ---
-enthält angular sourcecode von `git@github.com:nbartel/team023zip.git` als submodule
-
-Einbindung:
+Getting started:
 ```
-git submodule init
-git submodule update
 npm install
 ng build
 pip3 install -r requirements.txt
@@ -14,41 +10,36 @@ danach muss noch die ENV-Variable `DATABASE_URL` auf eine (postgresql) Datenbank
 
 ---
 ### Bis jetzt / TODO:
-- Crawler muss über `<url>/do_crawl` angestoßen werden und füllt dann die Datenbank (bisher nur warnung-bund und bei mehrfachem aufruf auch entsprechend doppelt / mit Fehlern)
+- Crawler muss über `<url>/do_crawl` angestoßen werden und füllt dann die Datenbank (bisher nur warnung-bund)
 - über `<url>/api/query` können die Ergebnisse zurückgegeben werden, filter sind per GET oder POST zu übergeben.
 - Datenbankmodel muss noch mal angepackt werden!
 - Anbindung Frontend zu query-api fehlt noch
 
 --- 
 ### Deployment mit Heroku:
-!!! Heroku benötigt noch etwas Aufmerksamkeit um vor dem Deploy des flask-Projekts das Submodul zu laden und dann Angular zu bauen, dementsprechnd erstmal ein workaround:
-in der Datei: `angular_src/angular.json` die Zeile
-``"outputPath": "dist/team23zip"``
-durch  ``"outputPath": "../dist/team23zip"`` ersetzen und danach mittel `ng build` neu bauen (oder den dist ordner eine ebene höher ziehen)
- 
-- heroku projekt erstellen
+- heroku Projekt erstellen
 - heroku-postgresql-addon hinzufügen
 - sicherstellen, dass im Hauptprojekt `DATABASE_URL` korrekt gesetzt wurde 
-- tabelle erstellen: (ACHTUNG, die Tabellenstruktur ist bisher alles andere als final )
+- Tabelle erstellen: (ACHTUNG, die Tabellenstruktur ist bisher alles andere als final )
 ````
 create table news_entry
 (
-    news_id     serial    not null
-        constraint news_entry_pk
-            primary key,
     source      text,
     query_url   text      not null,
     created     timestamp not null,
     last_update timestamp not null,
-    content     json,
+    content     text      not null,
     area        text,
     category    text      not null,
     tags        json,
-    identifier  text
+    identifier  text      not null
+        constraint news_entry_pk
+            primary key,
+    headline    text      not null
 );
 
-create unique index news_entry_news_id_uindex
-    on news_entry (news_id);
+create unique index news_entry_identifier_uindex
+    on news_entry (identifier);
 
 ```
 - projekt zum entsprechenden heroku git push 
