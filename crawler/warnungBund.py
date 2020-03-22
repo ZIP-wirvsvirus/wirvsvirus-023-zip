@@ -30,7 +30,7 @@ class BundCrawler(Crawler):
         content = json_news_entry["info"][0]["description"]
         area = ""
         try:
-            area = json_news_entry["info"][0]["area"]["areaDesc"]
+            area = json_news_entry["info"][0]["area"][0]["areaDesc"]
         except:
             # TODO
             pass
