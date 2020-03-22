@@ -3,8 +3,8 @@ from flask import Blueprint, render_template, send_from_directory
 from crawler.warnungBund import BundCrawler
 from database.db import db
 
-main_page = Blueprint("main_page", __name__, template_folder="angular_src/dist/team23zip",
-                      static_folder='angular_src/dist/team23zip')
+main_page = Blueprint("main_page", __name__, template_folder="dist/team23zip",
+                      static_folder='dist/team23zip')
 
 
 @main_page.route("/")
@@ -21,9 +21,9 @@ def do_crawl():
 
 @main_page.route("/<path:path>.js")
 def get_js(path):
-    return send_from_directory('angular_src/dist/team23zip', path + ".js")
+    return send_from_directory('dist/team23zip', path + ".js")
 
 
 @main_page.route("/assets/<path:path>")
 def get_assets(path):
-    return send_from_directory('angular_src/dist/team23zip/assets', path)
+    return send_from_directory('dist/team23zip/assets', path)

@@ -21,6 +21,11 @@ danach muss noch die ENV-Variable `DATABASE_URL` auf eine (postgresql) Datenbank
 
 --- 
 ### Deployment mit Heroku:
+!!! Heroku benötigt noch etwas Aufmerksamkeit um vor dem Deploy des flask-Projekts das Submodul zu laden und dann Angular zu bauen, dementsprechnd erstmal ein workaround:
+in der Datei: `angular_src/angular.json` die Zeile
+``"outputPath": "dist/team23zip"``
+durch  ``"outputPath": "../dist/team23zip"`` ersetzen und danach mittel `ng build` neu bauen (oder den dist ordner eine ebene höher ziehen)
+ 
 - heroku projekt erstellen
 - heroku-postgresql-addon hinzufügen
 - sicherstellen, dass im Hauptprojekt `DATABASE_URL` korrekt gesetzt wurde 
