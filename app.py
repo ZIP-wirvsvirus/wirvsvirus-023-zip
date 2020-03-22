@@ -1,26 +1,23 @@
 import os
 
-from flask import Flask
+from flask import Flask, render_template
 from config import Config
 from database.db import db
 
 from api.endpoint import endpoint
+from main_page import main_page
 
 
 def main(cfg=Config):
     app = Flask(__name__)
     app.config.from_object(cfg)  # Choose from the different configs...
     db.init_app(app)
+    app.register_blueprint(main_page)
     app.register_blueprint(endpoint)
     return app
 
 
 app = main()
-
-
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
 
 
 if __name__ == "__main__":
