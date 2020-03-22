@@ -73,6 +73,7 @@ fabric.properties
 .idea/*
 /venv/*
 
-/node_modules/*
+**/node_modules/*
+**/e2e/*
 
 #/dist/*
