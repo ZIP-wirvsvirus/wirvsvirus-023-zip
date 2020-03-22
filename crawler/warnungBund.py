@@ -42,7 +42,7 @@ class BundCrawler(Crawler):
         try:
             data = self.__collect()
             for entry in data:
-                database.session.add(self.__buildNewsEntry(entry))
+                database.session.merge(self.__buildNewsEntry(entry))
             database.session.commit()
         except Exception as ex:
             # TODO handle error correctly
