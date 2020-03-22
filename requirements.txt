@@ -2,4 +2,9 @@ werkzeug
 sqlalchemy
 flask
 Flask-SQLAlchemy
+SQLAlchemy
 gunicorn
+psycopg2
+jinja2
+itsdangerous
+MarkupSafe
