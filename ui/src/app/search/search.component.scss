@@ -3,6 +3,12 @@
   font-style: italic;
   opacity: 0.8; /* Firefox */
 }
+.search {
+	background-color:#326992 !important;
+}
+.text-secondary {
+	color:white !important;
+}
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: light;
@@ -11,11 +17,8 @@
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: light;
 }
-.mr-2 {
+#search-filters .mr-2 {
 	color:white !important;
 	border-color:white !important;
 	background-color:#1DA4E1 !important;
-}
-.search {
-	background-color:#326992 !important;
 }
