@@ -2,7 +2,7 @@
   "name": "team23zip_fullstack",
   "version": "0.0.0",
   "scripts": {
-    "heroku-prebuild": "cd angular_src && npm install && npm run ng build",
+    "heroku-prebuild": "cd angular_src && npm install && npm install -g angular-cli && npm run ng build",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -16,6 +16,6 @@
   "devDependencies": {
   },
   "engines": {
-    "node": "0.12.2"
+    "node": "12.X.X"
   }
 }
