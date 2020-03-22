@@ -4,7 +4,7 @@ from flask import Flask
 from config import Config
 from database.db import db
 
-from api import endpoint
+from api.endpoint import endpoint
 
 app = Flask(__name__)
 

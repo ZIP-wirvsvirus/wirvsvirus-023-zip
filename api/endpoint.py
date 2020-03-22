@@ -1,14 +1,8 @@
-import base64
-import copy
-import json
-import math
-import multiprocessing
+from datetime import datetime
 import traceback
-import os
-
 from sqlalchemy import and_, asc
 from werkzeug.exceptions import HTTPException
-from flask import jsonify, request, Blueprint, current_app, copy_current_request_context, make_response
+from flask import jsonify, request, Blueprint
 
 from database.db import db
 from database.models import NewsEntry
@@ -25,6 +19,7 @@ def handle_error(ex):
     text += str(''.join(traceback.format_exception(etype=type(ex), value=ex, tb=ex.__traceback__)))
     if isinstance(ex, HTTPException):
         code = ex.code
+    print(text)
     return jsonify({'success': False, 'msg': text}), code
 
 
@@ -34,20 +29,22 @@ def query():
         r_method = request.json
     else:
         r_method = request.args
-
-    source = r_method.get('source', default=None)
-
-    created_min = r_method.get('created_min', default=None)
-    created_max = r_method.get('created_max', default=None)
-    update_min = r_method.get('update_max', default=None)
-    update_max = r_method.get('update_max', default=None)
-    content = r_method.get('content', default=None)
-    area = r_method.get('area', default=None)
-    category = r_method.get('category', default=None)
-    tags = r_method.get('tags', default=None)  # TODO: comma seperated list of regex?
+    now = datetime.now()
+    time_zero = datetime.min
+    source = r_method.get('source', default="")
+    created_min = r_method.get('created_min', default=time_zero)
+    created_max = r_method.get('created_max', default=now)
+    update_min = r_method.get('update_max', default=time_zero)
+    update_max = r_method.get('update_max', default=now)
+    content = r_method.get('content', default="")
+    area = r_method.get('area', default="")
+    category = r_method.get('category', default="")
+    tags = r_method.get('tags', default="")  # TODO: comma seperated list of regex?
     res = db.session.query(NewsEntry).filter(
-        and_(NewsEntry.created.between(created_min, created_max), NewsEntry.created.between(update_min, update_max),
-             NewsEntry.content.contains(content), NewsEntry.category.contains(category),
-             NewsEntry.source.contains(source), NewsEntry.area.contains(area), NewsEntry.tags.contains(tags))).order_by(
-        asc(NewsEntry.id)).all()
-    return jsonify(res)
+        and_(NewsEntry.created >= created_min, NewsEntry.created < created_max, NewsEntry.last_update >= update_min,
+             NewsEntry.last_update < update_max,
+             NewsEntry.category.contains(category),  # TODO  NewsEntry.content['caption'].contains({"caption": content})
+             NewsEntry.source.contains(source), NewsEntry.area.contains(area))).order_by(
+        # TODO , NewsEntry.tags.contains(tags)
+        asc(NewsEntry.news_id)).all()
+    return jsonify([NewsEntry.serialize(x) for x in res])

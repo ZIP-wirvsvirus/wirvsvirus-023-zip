@@ -1,10 +1,4 @@
 import time
-
-from flask import current_app
-from itsdangerous import URLSafeTimedSerializer
-from sqlalchemy import ForeignKey
-from sqlalchemy.orm import backref
-
 from .db import db
 
 
@@ -24,6 +18,12 @@ class NewsEntry(db.Model):
     area = db.Column(db.String(128), nullable=True)
     category = db.Column(db.String, nullable=True)
     tags = db.Column(db.JSON)
+
+    @staticmethod
+    def serialize(ob):
+        return {'id': ob.news_id, 'source': ob.source, 'query_url': ob.query_url, 'created': ob.created,
+                'last_update': ob.last_update, 'content': ob.content, 'area': ob.area, 'category': ob.category,
+                'tags': ob.tags}
 
     def as_dict(self):
         return dict((col, getattr(self, col)) for col in
