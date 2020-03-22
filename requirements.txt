@@ -8,3 +8,4 @@ psycopg2
 jinja2
 itsdangerous
 MarkupSafe
+requests
