@@ -1,6 +1,6 @@
 from datetime import datetime
 import traceback
-from sqlalchemy import and_, asc
+from sqlalchemy import and_, asc, desc
 from werkzeug.exceptions import HTTPException
 from flask import jsonify, request, Blueprint, send_from_directory
 
@@ -8,6 +8,17 @@ from database.db import db
 from database.models import NewsEntry
 
 endpoint = Blueprint("endpoint", __name__, template_folder="templates")
+
+order_by_map = {'identifier': NewsEntry.identifier,
+                'source': NewsEntry.source,
+                'query_url': NewsEntry.query_url,
+                'created': NewsEntry.created,
+                'last_update': NewsEntry.last_update,
+                'content': NewsEntry.content,
+                'area': NewsEntry.area,
+                'category': NewsEntry.category,
+                'tags': NewsEntry.tags,
+                }
 
 
 @endpoint.errorhandler(Exception)
@@ -41,6 +52,8 @@ def query():
     area = r_method.get('area', default="")
     category = r_method.get('category', default="")
     tags = r_method.get('tags', default="")  # TODO: comma seperated list of regex?
+    order_by = order_by_map.get(r_method.get('order_by', default="created"), NewsEntry.created)
+    order_func = asc if bool(r_method.get('asc', default="True")) else desc
     res = db.session.query(NewsEntry).filter(
         and_(NewsEntry.created >= created_min, NewsEntry.created < created_max, NewsEntry.last_update >= update_min,
              NewsEntry.last_update < update_max,
@@ -48,5 +61,5 @@ def query():
              NewsEntry.category.contains(category),  # TODO  NewsEntry.content['caption'].contains({"caption": content})
              NewsEntry.source.contains(source), NewsEntry.area.contains(area))).order_by(
         # TODO , NewsEntry.tags.contains(tags)
-        asc(NewsEntry.news_id)).all()
+        order_func(order_by)).all()
     return jsonify([NewsEntry.serialize(x) for x in res])

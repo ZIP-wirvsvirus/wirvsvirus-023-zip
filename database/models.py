@@ -21,7 +21,7 @@ class NewsEntry(db.Model):
 
     @staticmethod
     def serialize(ob):
-        return {'id': ob.news_id, 'source': ob.source, 'query_url': ob.query_url, 'created': ob.created,
+        return {'source': ob.source, 'query_url': ob.query_url, 'created': ob.created,
                 'last_update': ob.last_update, 'content': ob.content, 'area': ob.area, 'category': ob.category,
                 'tags': ob.tags}
 
