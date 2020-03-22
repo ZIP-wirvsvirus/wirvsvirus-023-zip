@@ -66462,7 +66462,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             exportName = 'default';
           }
 
-          return __webpack_require__("./$$_lazy_route_resource lazy recursive")(module).then(
+          return __webpack_require__("./ui/$$_lazy_route_resource lazy recursive")(module).then(
           /**
           * @param {?} module
           * @return {?}
@@ -66508,7 +66508,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             factoryClassSuffix = '';
           }
 
-          return __webpack_require__("./$$_lazy_route_resource lazy recursive")(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix).then(
+          return __webpack_require__("./ui/$$_lazy_route_resource lazy recursive")(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix).then(
           /**
           * @param {?} module
           * @return {?}
@@ -90517,6 +90517,282 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     //# sourceMappingURL=router.js.map
 
     /***/
+  },
+
+  /***/
+  "./node_modules/fuzzy-search/src/FuzzySearch.js":
+  /*!******************************************************!*\
+    !*** ./node_modules/fuzzy-search/src/FuzzySearch.js ***!
+    \******************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesFuzzySearchSrcFuzzySearchJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "default", function () {
+      return FuzzySearch;
+    });
+    /* harmony import */
+
+
+    var _Helper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./Helper */
+    "./node_modules/fuzzy-search/src/Helper.js");
+
+    var FuzzySearch =
+    /*#__PURE__*/
+    function () {
+      function FuzzySearch() {
+        var haystack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+        var keys = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+        var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+        _classCallCheck(this, FuzzySearch);
+
+        if (!Array.isArray(keys)) {
+          options = keys;
+          keys = [];
+        }
+
+        this.haystack = haystack;
+        this.keys = keys;
+        this.options = Object.assign({
+          caseSensitive: false,
+          sort: false
+        }, options);
+      }
+
+      _createClass2(FuzzySearch, [{
+        key: "search",
+        value: function search() {
+          var query = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+
+          if (query === '') {
+            return this.haystack;
+          }
+
+          var results = [];
+
+          for (var i = 0; i < this.haystack.length; i++) {
+            var item = this.haystack[i];
+
+            if (this.keys.length === 0) {
+              var score = FuzzySearch.isMatch(item, query, this.options.caseSensitive);
+
+              if (score) {
+                results.push({
+                  item: item,
+                  score: score
+                });
+              }
+            } else {
+              for (var y = 0; y < this.keys.length; y++) {
+                var propertyValues = _Helper__WEBPACK_IMPORTED_MODULE_0__["default"].getDescendantProperty(item, this.keys[y]);
+
+                var found = false;
+
+                for (var z = 0; z < propertyValues.length; z++) {
+                  var _score = FuzzySearch.isMatch(propertyValues[z], query, this.options.caseSensitive);
+
+                  if (_score) {
+                    found = true;
+                    results.push({
+                      item: item,
+                      score: _score
+                    });
+                    break;
+                  }
+                }
+
+                if (found) {
+                  break;
+                }
+              }
+            }
+          }
+
+          if (this.options.sort) {
+            results.sort(function (a, b) {
+              return a.score - b.score;
+            });
+          }
+
+          return results.map(function (result) {
+            return result.item;
+          });
+        }
+      }], [{
+        key: "isMatch",
+        value: function isMatch(item, query, caseSensitive) {
+          item = String(item);
+          query = String(query);
+
+          if (!caseSensitive) {
+            item = item.toLocaleLowerCase();
+            query = query.toLocaleLowerCase();
+          }
+
+          var indexes = FuzzySearch.nearestIndexesFor(item, query);
+
+          if (!indexes) {
+            return false;
+          } // Exact matches should be first.
+
+
+          if (item === query) {
+            return 1;
+          } // If we have more than 2 letters, matches close to each other should be first.
+
+
+          if (indexes.length > 1) {
+            return 2 + (indexes[indexes.length - 1] - indexes[0]);
+          } // Matches closest to the start of the string should be first.
+
+
+          return 2 + indexes[0];
+        }
+      }, {
+        key: "nearestIndexesFor",
+        value: function nearestIndexesFor(item, query) {
+          var letters = query.split('');
+          var indexes = [];
+          var indexesOfFirstLetter = FuzzySearch.indexesOfFirstLetter(item, query);
+          indexesOfFirstLetter.forEach(function (startingIndex, loopingIndex) {
+            var index = startingIndex + 1;
+            indexes[loopingIndex] = [startingIndex];
+
+            for (var i = 1; i < letters.length; i++) {
+              var letter = letters[i];
+              index = item.indexOf(letter, index);
+
+              if (index === -1) {
+                indexes[loopingIndex] = false;
+                break;
+              }
+
+              indexes[loopingIndex].push(index);
+              index++;
+            }
+          });
+          indexes = indexes.filter(function (letterIndexes) {
+            return letterIndexes !== false;
+          });
+
+          if (!indexes.length) {
+            return false;
+          }
+
+          return indexes.sort(function (a, b) {
+            if (a.length === 1) {
+              return a[0] - b[0];
+            }
+
+            a = a[a.length - 1] - a[0];
+            b = b[b.length - 1] - b[0];
+            return a - b;
+          })[0];
+        }
+      }, {
+        key: "indexesOfFirstLetter",
+        value: function indexesOfFirstLetter(item, query) {
+          var match = query[0];
+          return item.split('').map(function (letter, index) {
+            if (letter !== match) {
+              return false;
+            }
+
+            return index;
+          }).filter(function (index) {
+            return index !== false;
+          });
+        }
+      }]);
+
+      return FuzzySearch;
+    }();
+    /***/
+
+  },
+
+  /***/
+  "./node_modules/fuzzy-search/src/Helper.js":
+  /*!*************************************************!*\
+    !*** ./node_modules/fuzzy-search/src/Helper.js ***!
+    \*************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesFuzzySearchSrcHelperJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "default", function () {
+      return Helper;
+    });
+
+    var Helper =
+    /*#__PURE__*/
+    function () {
+      function Helper() {
+        _classCallCheck(this, Helper);
+      }
+
+      _createClass2(Helper, null, [{
+        key: "getDescendantProperty",
+        value: function getDescendantProperty(object, path) {
+          var list = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+          var firstSegment;
+          var remaining;
+          var dotIndex;
+          var value;
+          var index;
+          var length;
+
+          if (path) {
+            dotIndex = path.indexOf('.');
+
+            if (dotIndex === -1) {
+              firstSegment = path;
+            } else {
+              firstSegment = path.slice(0, dotIndex);
+              remaining = path.slice(dotIndex + 1);
+            }
+
+            value = object[firstSegment];
+
+            if (value !== null && typeof value !== 'undefined') {
+              if (!remaining && (typeof value === 'string' || typeof value === 'number')) {
+                list.push(value);
+              } else if (Object.prototype.toString.call(value) === '[object Array]') {
+                for (index = 0, length = value.length; index < length; index++) {
+                  Helper.getDescendantProperty(value[index], remaining, list);
+                }
+              } else if (remaining) {
+                Helper.getDescendantProperty(value, remaining, list);
+              }
+            }
+          } else {
+            list.push(object);
+          }
+
+          return list;
+        }
+      }]);
+
+      return Helper;
+    }();
+    /***/
+
   },
 
   /***/

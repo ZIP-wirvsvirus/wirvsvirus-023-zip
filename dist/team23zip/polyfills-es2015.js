@@ -2955,10 +2955,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
-/***/ "./src/polyfills.ts":
-/*!**************************!*\
-  !*** ./src/polyfills.ts ***!
-  \**************************/
+/***/ "./ui/src/polyfills.ts":
+/*!*****************************!*\
+  !*** ./ui/src/polyfills.ts ***!
+  \*****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3027,13 +3027,13 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 2:
-/*!********************************!*\
-  !*** multi ./src/polyfills.ts ***!
-  \********************************/
+/*!***********************************!*\
+  !*** multi ./ui/src/polyfills.ts ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\the\PycharmProjects\wirvsvirus_zip\angular_src\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\Users\the\PycharmProjects\wirvsvirus_zip\ui\src\polyfills.ts */"./ui/src/polyfills.ts");
 
 
 /***/ })

@@ -1,16 +1,16 @@
 """ from https://warnung.bund.de/bbk.mowas/gefahrendurchsagen.json """
 from datetime import datetime
-from utils import *
 import requests
-
+from crawler.utils import Keywordgeneration
 from crawler.Crawler import Crawler
 from database.models import NewsEntry
 
 URL = "https://warnung.bund.de/bbk.mowas/gefahrendurchsagen.json"
 
 
-class BundCrawler(Crawler, Keywordgeneration):
+class BundCrawler(Crawler):
     def __init__(self):
+        self.keywordgenerator = Keywordgeneration()
         self.result = []
 
     def __collect(self):
@@ -26,7 +26,7 @@ class BundCrawler(Crawler, Keywordgeneration):
         sent = json_news_entry["sent"][:-5] + json_news_entry["sent"][-5:].replace(":", "")
         created = datetime.strptime(sent, "%Y-%m-%dT%H:%M:%S%z")
         last_update = datetime.now()
-        content = json_news_entry
+        content = json_news_entry  # TODO change to the real text-content + a field for the headline
         area = ""
         try:
             area = json_news_entry["info"][0]["area"]["areaDesc"]
@@ -34,7 +34,7 @@ class BundCrawler(Crawler, Keywordgeneration):
             # TODO
             pass
         category = json_news_entry["info"][0]["category"]
-        tags = self.generateKeyWords([content])
+        tags = self.keywordgenerator.generateKeyWords([content["info"][0]["description"]])
         return NewsEntry(identifier=identifier, source=source, query_url=query_url, created=created,
                          last_update=last_update, content=content, area=area, category=category, tags=tags)
 

@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
-class Keywordgeneration:
+import re
+from germalemma import GermaLemma
+from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+import nltk
 
+nltk.download('stopwords')
+
+
+class Keywordgeneration:
     def __init__(self):
         self.lemmatizer = GermaLemma()
 
@@ -10,12 +18,11 @@ class Keywordgeneration:
         self.stop_words = self.stop_words.union(self.own_stopwords)
 
         self.corona_keywords = ['corona', 'coronavirus', 'covid19', 'covid', 'hamsterkauf', 'impfstoff', 'medikamente',
-                           'medikament', 'impfung', 'ausgangssperre']
+                                'medikament', 'impfung', 'ausgangssperre']
 
     def sort_coo(self, coo_matrix):
         tuples = zip(coo_matrix.col, coo_matrix.data)
         return sorted(tuples, key=lambda x: (x[1], x[0]), reverse=True)
-
 
     def extract_topn_from_vector(self, feature_names, sorted_items, topn=10):
         """get the feature names and tf-idf score of top n items"""
@@ -68,7 +75,6 @@ class Keywordgeneration:
     def lemmatize(self, word):
         return self.lemmatizer.find_lemma(word, 'N')
 
-
     def generateKeyWords(self, strs):
         keywordList = []
         corpus = []
@@ -76,9 +82,8 @@ class Keywordgeneration:
         for i in range(0, len(strs)):
             corpus.append(self.normalizeText(strs[i]))
 
-
-        cv=CountVectorizer(stop_words=self.stop_words, max_features=10000, ngram_range=(1,3))
-        X=cv.fit_transform(corpus)
+        cv = CountVectorizer(stop_words=self.stop_words, max_features=10000, ngram_range=(1, 3))
+        X = cv.fit_transform(corpus)
 
         tfidf_transformer = TfidfTransformer(smooth_idf=True, use_idf=True)
         tfidf_transformer.fit(X)
@@ -91,13 +96,12 @@ class Keywordgeneration:
             doc = corpus[i]
             # generate tf-idf for the given document
             tf_idf_vector = tfidf_transformer.transform(cv.transform([doc]))
-https://github.com/thejanky/wirvsvirus-023-zip
             # sort the tf-idf vectors by descending order of scores
             sorted_items = self.sort_coo(tf_idf_vector.tocoo())
             # extract only the top n; n here is 10
             keywords = self.extract_topn_from_vector(feature_names, sorted_items, 5)
 
-            #check if important corona keyword is used in text
+            # check if important corona keyword is used in text
             for t in self.corona_keywords:
                 if t in doc:
                     keywords[t] = 1

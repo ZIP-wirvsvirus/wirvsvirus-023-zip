@@ -1,7 +1,6 @@
 from flask import Blueprint, render_template, send_from_directory
 
 from crawler.CrawlerManager import CrawlerManager
-from crawler.warnungBund import BundCrawler
 from database.db import db
 
 main_page = Blueprint("main_page", __name__, template_folder="dist/team23zip",

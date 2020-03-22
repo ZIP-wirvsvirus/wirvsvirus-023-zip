@@ -1,15 +1,15 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"], {
   /***/
-  "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/styles.scss":
-  /*!********************************************************************************************************************************************************************************************************************!*\
-    !*** ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./node_modules/sass-loader/dist/cjs.js??ref--13-3!./src/styles.scss ***!
-    \********************************************************************************************************************************************************************************************************************/
+  "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./ui/src/styles.scss":
+  /*!***********************************************************************************************************************************************************************************************************************!*\
+    !*** ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./node_modules/sass-loader/dist/cjs.js??ref--13-3!./ui/src/styles.scss ***!
+    \***********************************************************************************************************************************************************************************************************************/
 
   /*! no static exports found */
 
   /***/
-  function node_modulesAngularDevkitBuildAngularSrcAngularCliFilesPluginsRawCssLoaderJsNode_modulesPostcssLoaderSrcIndexJsNode_modulesSassLoaderDistCjsJsSrcStylesScss(module, exports) {
-    module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9DOlxcVXNlcnNcXHRoZVxcUHljaGFybVByb2plY3RzXFx3aXJ2c3ZpcnVzX3ppcFxcYW5ndWxhcl9zcmMvc3JjXFxzdHlsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4RUFBQSIsImZpbGUiOiJzcmMvc3R5bGVzLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBZb3UgY2FuIGFkZCBnbG9iYWwgc3R5bGVzIHRvIHRoaXMgZmlsZSwgYW5kIGFsc28gaW1wb3J0IG90aGVyIHN0eWxlIGZpbGVzICovXHJcbiJdfQ== */", '', '']];
+  function node_modulesAngularDevkitBuildAngularSrcAngularCliFilesPluginsRawCssLoaderJsNode_modulesPostcssLoaderSrcIndexJsNode_modulesSassLoaderDistCjsJsUiSrcStylesScss(module, exports) {
+    module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVpL3NyYy9DOlxcVXNlcnNcXHRoZVxcUHljaGFybVByb2plY3RzXFx3aXJ2c3ZpcnVzX3ppcC91aVxcc3JjXFxzdHlsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4RUFBQSIsImZpbGUiOiJ1aS9zcmMvc3R5bGVzLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBZb3UgY2FuIGFkZCBnbG9iYWwgc3R5bGVzIHRvIHRoaXMgZmlsZSwgYW5kIGFsc28gaW1wb3J0IG90aGVyIHN0eWxlIGZpbGVzICovXHJcbiJdfQ== */", '', '']];
     /***/
   },
 
@@ -310,18 +310,18 @@
   },
 
   /***/
-  "./src/styles.scss":
-  /*!*************************!*\
-    !*** ./src/styles.scss ***!
-    \*************************/
+  "./ui/src/styles.scss":
+  /*!****************************!*\
+    !*** ./ui/src/styles.scss ***!
+    \****************************/
 
   /*! no static exports found */
 
   /***/
-  function srcStylesScss(module, exports, __webpack_require__) {
+  function uiSrcStylesScss(module, exports, __webpack_require__) {
     var content = __webpack_require__(
-    /*! !../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../node_modules/postcss-loader/src??embedded!../node_modules/sass-loader/dist/cjs.js??ref--13-3!./styles.scss */
-    "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/styles.scss");
+    /*! !../../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../../node_modules/postcss-loader/src??embedded!../../node_modules/sass-loader/dist/cjs.js??ref--13-3!./styles.scss */
+    "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./ui/src/styles.scss");
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -332,7 +332,7 @@
     options.singleton = false;
 
     var update = __webpack_require__(
-    /*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
+    /*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
     "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
 
     if (content.locals) {
@@ -344,17 +344,17 @@
 
   /***/
   3:
-  /*!*******************************!*\
-    !*** multi ./src/styles.scss ***!
-    \*******************************/
+  /*!**********************************!*\
+    !*** multi ./ui/src/styles.scss ***!
+    \**********************************/
 
   /*! no static exports found */
 
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\the\PycharmProjects\wirvsvirus_zip\angular_src\src\styles.scss */
-    "./src/styles.scss");
+    /*! C:\Users\the\PycharmProjects\wirvsvirus_zip\ui\src\styles.scss */
+    "./ui/src/styles.scss");
     /***/
   }
 }, [[3, "runtime"]]]);

@@ -18976,15 +18976,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-  "./src/polyfills.ts":
-  /*!**************************!*\
-    !*** ./src/polyfills.ts ***!
-    \**************************/
+  "./ui/src/polyfills.ts":
+  /*!*****************************!*\
+    !*** ./ui/src/polyfills.ts ***!
+    \*****************************/
 
   /*! no exports provided */
 
   /***/
-  function srcPolyfillsTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcPolyfillsTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -19069,16 +19069,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
   /***/
   1:
-  /*!****************************************************************************************************************************************************!*\
-    !*** multi ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js zone.js/dist/zone-legacy ./src/polyfills.ts ***!
-    \****************************************************************************************************************************************************/
+  /*!*******************************************************************************************************************************************************!*\
+    !*** multi ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js zone.js/dist/zone-legacy ./ui/src/polyfills.ts ***!
+    \*******************************************************************************************************************************************************/
 
   /*! no static exports found */
 
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-    /*! C:\Users\the\PycharmProjects\wirvsvirus_zip\angular_src\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-polyfills.js */
+    /*! C:\Users\the\PycharmProjects\wirvsvirus_zip\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-polyfills.js */
     "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js");
 
     __webpack_require__(
@@ -19086,8 +19086,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     "./node_modules/zone.js/dist/zone-legacy.js");
 
     module.exports = __webpack_require__(
-    /*! C:\Users\the\PycharmProjects\wirvsvirus_zip\angular_src\src\polyfills.ts */
-    "./src/polyfills.ts");
+    /*! C:\Users\the\PycharmProjects\wirvsvirus_zip\ui\src\polyfills.ts */
+    "./ui/src/polyfills.ts");
     /***/
   }
 }, [[1, "runtime"]]]);

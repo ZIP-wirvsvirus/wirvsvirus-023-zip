@@ -6,15 +6,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"], {
   /***/
-  "./$$_lazy_route_resource lazy recursive":
-  /*!******************************************************!*\
-    !*** ./$$_lazy_route_resource lazy namespace object ***!
-    \******************************************************/
+  "./ui/$$_lazy_route_resource lazy recursive":
+  /*!*********************************************************!*\
+    !*** ./ui/$$_lazy_route_resource lazy namespace object ***!
+    \*********************************************************/
 
   /*! no static exports found */
 
   /***/
-  function $$_lazy_route_resourceLazyRecursive(module, exports) {
+  function ui$$_lazy_route_resourceLazyRecursive(module, exports) {
     function webpackEmptyAsyncContext(req) {
       // Here Promise.resolve().then() is used instead of new Promise() to prevent
       // uncaught exception popping up in devtools
@@ -31,20 +31,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
     module.exports = webpackEmptyAsyncContext;
-    webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
+    webpackEmptyAsyncContext.id = "./ui/$$_lazy_route_resource lazy recursive";
     /***/
   },
 
   /***/
-  "./src/app/app-routing.module.ts":
-  /*!***************************************!*\
-    !*** ./src/app/app-routing.module.ts ***!
-    \***************************************/
+  "./ui/src/app/app-routing.module.ts":
+  /*!******************************************!*\
+    !*** ./ui/src/app/app-routing.module.ts ***!
+    \******************************************/
 
   /*! exports provided: AppRoutingModule */
 
   /***/
-  function srcAppAppRoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcAppAppRoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -71,13 +71,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _search_search_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./search/search.component */
-    "./src/app/search/search.component.ts");
+    "./ui/src/app/search/search.component.ts");
     /* harmony import */
 
 
     var _mission_mission_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./mission/mission.component */
-    "./src/app/mission/mission.component.ts");
+    "./ui/src/app/mission/mission.component.ts");
 
     var routes = [{
       path: 'search',
@@ -132,15 +132,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/app.component.ts":
-  /*!**********************************!*\
-    !*** ./src/app/app.component.ts ***!
-    \**********************************/
+  "./ui/src/app/app.component.ts":
+  /*!*************************************!*\
+    !*** ./ui/src/app/app.component.ts ***!
+    \*************************************/
 
   /*! exports provided: AppComponent */
 
   /***/
-  function srcAppAppComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcAppAppComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -161,7 +161,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _header_header_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! ./header/header.component */
-    "./src/app/header/header.component.ts");
+    "./ui/src/app/header/header.component.ts");
     /* harmony import */
 
 
@@ -173,7 +173,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _footer_footer_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./footer/footer.component */
-    "./src/app/footer/footer.component.ts");
+    "./ui/src/app/footer/footer.component.ts");
 
     var AppComponent = function AppComponent() {
       _classCallCheck(this, AppComponent);
@@ -205,7 +205,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_header_header_component__WEBPACK_IMPORTED_MODULE_1__["HeaderComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_3__["FooterComponent"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"]
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ1aS9zcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"]
     });
     /*@__PURE__*/
 
@@ -224,15 +224,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/app.module.ts":
-  /*!*******************************!*\
-    !*** ./src/app/app.module.ts ***!
-    \*******************************/
+  "./ui/src/app/app.module.ts":
+  /*!**********************************!*\
+    !*** ./ui/src/app/app.module.ts ***!
+    \**********************************/
 
   /*! exports provided: AppModule */
 
   /***/
-  function srcAppAppModuleTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcAppAppModuleTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -259,37 +259,37 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./app-routing.module */
-    "./src/app/app-routing.module.ts");
+    "./ui/src/app/app-routing.module.ts");
     /* harmony import */
 
 
     var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./app.component */
-    "./src/app/app.component.ts");
+    "./ui/src/app/app.component.ts");
     /* harmony import */
 
 
     var _search_search_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./search/search.component */
-    "./src/app/search/search.component.ts");
+    "./ui/src/app/search/search.component.ts");
     /* harmony import */
 
 
     var _mission_mission_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./mission/mission.component */
-    "./src/app/mission/mission.component.ts");
+    "./ui/src/app/mission/mission.component.ts");
     /* harmony import */
 
 
     var _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./footer/footer.component */
-    "./src/app/footer/footer.component.ts");
+    "./ui/src/app/footer/footer.component.ts");
     /* harmony import */
 
 
     var _header_header_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./header/header.component */
-    "./src/app/header/header.component.ts");
+    "./ui/src/app/header/header.component.ts");
     /* harmony import */
 
 
@@ -341,15 +341,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/footer/footer.component.ts":
-  /*!********************************************!*\
-    !*** ./src/app/footer/footer.component.ts ***!
-    \********************************************/
+  "./ui/src/app/footer/footer.component.ts":
+  /*!***********************************************!*\
+    !*** ./ui/src/app/footer/footer.component.ts ***!
+    \***********************************************/
 
   /*! exports provided: FooterComponent */
 
   /***/
-  function srcAppFooterFooterComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcAppFooterFooterComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -418,7 +418,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
       },
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LnNjc3MifQ== */"]
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ1aS9zcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LnNjc3MifQ== */"]
     });
     /*@__PURE__*/
 
@@ -439,15 +439,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/header/header.component.ts":
-  /*!********************************************!*\
-    !*** ./src/app/header/header.component.ts ***!
-    \********************************************/
+  "./ui/src/app/header/header.component.ts":
+  /*!***********************************************!*\
+    !*** ./ui/src/app/header/header.component.ts ***!
+    \***********************************************/
 
   /*! exports provided: HeaderComponent */
 
   /***/
-  function srcAppHeaderHeaderComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcAppHeaderHeaderComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -553,7 +553,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkActive"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MifQ== */"]
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ1aS9zcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MifQ== */"]
     });
     /*@__PURE__*/
 
@@ -574,15 +574,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/mission/mission.component.ts":
-  /*!**********************************************!*\
-    !*** ./src/app/mission/mission.component.ts ***!
-    \**********************************************/
+  "./ui/src/app/mission/mission.component.ts":
+  /*!*************************************************!*\
+    !*** ./ui/src/app/mission/mission.component.ts ***!
+    \*************************************************/
 
   /*! exports provided: MissionComponent */
 
   /***/
-  function srcAppMissionMissionComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcAppMissionMissionComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -665,7 +665,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
       },
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21pc3Npb24vbWlzc2lvbi5jb21wb25lbnQuc2NzcyJ9 */"]
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ1aS9zcmMvYXBwL21pc3Npb24vbWlzc2lvbi5jb21wb25lbnQuc2NzcyJ9 */"]
     });
     /*@__PURE__*/
 
@@ -686,15 +686,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/search/search.component.ts":
-  /*!********************************************!*\
-    !*** ./src/app/search/search.component.ts ***!
-    \********************************************/
+  "./ui/src/app/search/search.component.ts":
+  /*!***********************************************!*\
+    !*** ./ui/src/app/search/search.component.ts ***!
+    \***********************************************/
 
   /*! exports provided: SearchComponent */
 
   /***/
-  function srcAppSearchSearchComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcAppSearchSearchComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -713,32 +713,38 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _source_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ../source.service */
-    "./src/app/source.service.ts");
+    var fuzzy_search__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! fuzzy-search */
+    "./node_modules/fuzzy-search/src/FuzzySearch.js");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _source_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../source.service */
+    "./ui/src/app/source.service.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
     function SearchComponent_span_5_Template(rf, ctx) {
       if (rf & 1) {
-        var _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 17);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function SearchComponent_span_5_Template_button_click_1_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r10);
 
-          var filter_r5 = ctx.$implicit;
+          var filter_r6 = ctx.$implicit;
 
-          var ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+          var ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r8.toggleFilter(filter_r5);
+          return ctx_r9.toggleFilter(filter_r6);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
@@ -749,45 +755,45 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var filter_r5 = ctx.$implicit;
+        var filter_r6 = ctx.$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](filter_r5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](filter_r6);
       }
     }
 
     function SearchComponent_span_7_Template(rf, ctx) {
       if (rf & 1) {
-        var _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span", 18);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span", 19);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function SearchComponent_span_7_Template_span_click_3_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r15);
 
-          var selectedFilter_r10 = ctx.$implicit;
+          var selectedFilter_r11 = ctx.$implicit;
 
-          var ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+          var ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r13.toggleFilter(selectedFilter_r10);
+          return ctx_r14.toggleFilter(selectedFilter_r11);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnamespaceSVG"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "svg", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "svg", 20);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "path", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "path", 21);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "path", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "path", 22);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "path", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "path", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -799,11 +805,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var selectedFilter_r10 = ctx.$implicit;
+        var selectedFilter_r11 = ctx.$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", selectedFilter_r10, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", selectedFilter_r11, " ");
       }
     }
 
@@ -811,7 +817,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span", 24);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "i");
 
@@ -825,29 +831,51 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function SearchComponent_div_26_Template(rf, ctx) {
+    function SearchComponent_div_22_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 25);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 26);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 27);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h1", 28);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Loading...");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+    }
+
+    function SearchComponent_div_23_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 29);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 30);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 31);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h5", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h5", 32);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "h6", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "h6", 33);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p", 34);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
 
@@ -859,7 +887,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 35);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Artikel lesen");
 
@@ -875,19 +903,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var article_r15 = ctx.$implicit;
+        var article_r16 = ctx.$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](article_r15.headline);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](article_r16.headline);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](article_r15.identifier);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](article_r16.identifier);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", article_r15.content.substring(0, 200), " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", article_r16.content.substring(0, 200), " ");
       }
     }
 
@@ -902,6 +930,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.selectedFilters = [];
         this.loadedFilters = [];
         this.loadedArticles = [];
+        this.previewArticles = [];
       }
 
       _createClass(SearchComponent, [{
@@ -937,7 +966,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "loadArticles",
         value: function loadArticles() {
-          this.loadArticle('assets/data/content/EW-SE079-20200318-79-001.json');
+          this.loadArticle('assets/data/content/DE-BB-EW-SE079-20200318-79-001.json');
           this.loadArticle('assets/data/content/DE-BB-EW-SE079-20200318-79-002.json');
           this.loadArticle('assets/data/content/DE-BW-FR-W022-20200310-000.json');
           this.loadArticle('assets/data/content/DE-BW-FR-W022-20200317-000.json');
@@ -994,6 +1023,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.sourceService.getArticle(name).subscribe(function (resp) {
             _this2.loadedArticles.push(resp);
+
+            _this2.previewArticles.push(resp);
           });
         }
       }, {
@@ -1026,7 +1057,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "onKey",
         value: function onKey(event) {
-          alert(event.target.value);
+          var _this3 = this;
+
+          this.previewArticles = [];
+          var searcher = new fuzzy_search__WEBPACK_IMPORTED_MODULE_1__["default"](this.loadedArticles, ['headline', 'content'], {
+            caseSensitive: true
+          });
+          var result = searcher.search(event.target.value);
+          setTimeout(function () {
+            _this3.previewArticles = result;
+          }, 1000); //simulate loading
         }
       }]);
 
@@ -1034,15 +1074,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     SearchComponent.ɵfac = function SearchComponent_Factory(t) {
-      return new (t || SearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_source_service__WEBPACK_IMPORTED_MODULE_1__["SourceService"]));
+      return new (t || SearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_source_service__WEBPACK_IMPORTED_MODULE_2__["SourceService"]));
     };
 
     SearchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: SearchComponent,
       selectors: [["app-search"]],
-      decls: 27,
-      vars: 4,
-      consts: [[1, "container-fluid", "pt-3", "pb-3"], [1, "row"], [1, "col"], [1, "jumbotron"], ["id", "search-filters", 1, "pt-3", "text-center"], [4, "ngFor", "ngForOf"], ["id", "search-selected-filters", 1, "pb-1", "text-right"], [4, "ngIf"], ["id", "search-iput", 1, "input-group", "input-group-lg"], [1, "input-group-prepend"], ["id", "inputGroup-sizing-lg", 1, "input-group-text"], ["type", "text", "aria-label", "search-field", "aria-describedby", "inputGroup-sizing-sm", "placeholder", "Bitte geben Sie hier Ihren Suchbegriff ein...", 1, "form-control", "text-center", 3, "keyup.enter"], ["search", ""], ["id", "search-explain", 1, "pt-3", "text-center"], [1, "text-secondary", "small", "mr-2", "ml-2"], ["id", "search-result-header", 1, "pt-3", "text-center"], [1, "my-2"], ["class", "col", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", "btn-sm", "btn-outline-secondary", "mr-2", "ml-2", 3, "click"], [1, "badge", "badge-light", "mr-2", "ml-2"], [3, "click"], ["width", "0.7em", "height", "0.7em", "viewBox", "0 0 16 16", "fill", "currentColor", "xmlns", "http://www.w3.org/2000/svg", 1, "bi", "bi-x-circle"], ["fill-rule", "evenodd", "d", "M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z", "clip-rule", "evenodd"], ["fill-rule", "evenodd", "d", "M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z", "clip-rule", "evenodd"], ["fill-rule", "evenodd", "d", "M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z", "clip-rule", "evenodd"], [1, "pt-3"], [1, "card"], [1, "card-body"], [1, "card-title"], [1, "card-subtitle", "mb-2", "text-muted"], [1, "card-text"], ["href", "#", 1, "card-link"]],
+      decls: 24,
+      vars: 5,
+      consts: [[1, "container-fluid", "pt-3", "pb-3"], [1, "row"], [1, "col"], [1, "jumbotron"], ["id", "search-filters", 1, "pt-3", "text-center"], [4, "ngFor", "ngForOf"], ["id", "search-selected-filters", 1, "pb-1", "text-right"], [4, "ngIf"], ["id", "search-iput", 1, "input-group", "input-group-lg"], [1, "input-group-prepend"], ["id", "inputGroup-sizing-lg", 1, "input-group-text"], ["type", "text", "aria-label", "search-field", "aria-describedby", "inputGroup-sizing-sm", "placeholder", "Bitte geben Sie hier Ihren Suchbegriff ein...", 1, "form-control", "text-center", 3, "keyup"], ["search", ""], ["id", "search-result-header", 1, "pt-2", "text-center"], [1, "my-2"], ["class", "col text-center", 4, "ngIf"], ["class", "col", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", "btn-sm", "btn-outline-secondary", "mr-2", "ml-2", 3, "click"], [1, "badge", "badge-light", "mr-2", "ml-2"], [3, "click"], ["width", "0.7em", "height", "0.7em", "viewBox", "0 0 16 16", "fill", "currentColor", "xmlns", "http://www.w3.org/2000/svg", 1, "bi", "bi-x-circle"], ["fill-rule", "evenodd", "d", "M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z", "clip-rule", "evenodd"], ["fill-rule", "evenodd", "d", "M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z", "clip-rule", "evenodd"], ["fill-rule", "evenodd", "d", "M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z", "clip-rule", "evenodd"], [1, "text-secondary", "small", "mr-2", "ml-2"], [1, "col", "text-center"], [1, "jumbotron", "jumbotron-fluid"], [1, "container-fluid"], [1, "display-4"], [1, "pt-3"], [1, "card"], [1, "card-body"], [1, "card-title"], [1, "card-subtitle", "mb-2", "text-muted"], [1, "card-text"], ["href", "#", 1, "card-link"]],
       template: function SearchComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -1081,7 +1121,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "input", 11, 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("keyup.enter", function SearchComponent_Template_input_keyup_enter_13_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("keyup", function SearchComponent_Template_input_keyup_13_listener($event) {
             return ctx.onKey($event);
           });
 
@@ -1089,13 +1129,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "span", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "i");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, " Sie k\xF6nnen hier ganz einfach vertrauensw\xFCrdige Quellen durchsuchen und filtern. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "h2");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Neuste Beitr\xE4ge");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "hr", 14);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1103,35 +1155,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](22, SearchComponent_div_22_Template, 5, 0, "div", 15);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "h1");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Neuste Beitr\xE4ge");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "hr", 16);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](26, SearchComponent_div_26_Template, 14, 3, "div", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](23, SearchComponent_div_23_Template, 14, 3, "div", 16);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1151,13 +1179,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.selectedFilters === undefined || ctx.selectedFilters.length == 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.loadedArticles.slice(0, 2));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.previewArticles.length == 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.previewArticles.slice(0, 2));
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]],
-      styles: ["[_ngcontent-%COMP%]::-webkit-input-placeholder {\n  \n  color: light;\n  font-style: italic;\n  opacity: 0.8;\n  \n}\n\n[_ngcontent-%COMP%]::-moz-placeholder {\n  \n  color: light;\n  font-style: italic;\n  opacity: 0.8;\n  \n}\n\n[_ngcontent-%COMP%]::-ms-input-placeholder {\n  \n  color: light;\n  font-style: italic;\n  opacity: 0.8;\n  \n}\n\n[_ngcontent-%COMP%]::placeholder {\n  \n  color: light;\n  font-style: italic;\n  opacity: 0.8;\n  \n}\n\n[_ngcontent-%COMP%]:-ms-input-placeholder {\n  \n  color: light;\n}\n\n[_ngcontent-%COMP%]::-ms-input-placeholder {\n  \n  color: light;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VhcmNoL0M6XFxVc2Vyc1xcdGhlXFxQeWNoYXJtUHJvamVjdHNcXHdpcnZzdmlydXNfemlwXFxhbmd1bGFyX3NyYy9zcmNcXGFwcFxcc2VhcmNoXFxzZWFyY2guY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3NlYXJjaC9zZWFyY2guY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFBZ0IseUNBQUE7RUFDZCxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQWMsWUFBQTtBQ0doQjs7QUROQTtFQUFnQix5Q0FBQTtFQUNkLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFBYyxZQUFBO0FDR2hCOztBRE5BO0VBQWdCLHlDQUFBO0VBQ2QsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtFQUFjLFlBQUE7QUNHaEI7O0FETkE7RUFBZ0IseUNBQUE7RUFDZCxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQWMsWUFBQTtBQ0doQjs7QURBQTtFQUF5Qiw0QkFBQTtFQUN2QixZQUFBO0FDSUY7O0FEREE7RUFBMEIsbUJBQUE7RUFDeEIsWUFBQTtBQ0tGIiwiZmlsZSI6InNyYy9hcHAvc2VhcmNoL3NlYXJjaC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjo6cGxhY2Vob2xkZXIgeyAvKiBDaHJvbWUsIEZpcmVmb3gsIE9wZXJhLCBTYWZhcmkgMTAuMSsgKi9cclxuICBjb2xvcjogbGlnaHQ7XHJcbiAgZm9udC1zdHlsZTogaXRhbGljO1xyXG4gIG9wYWNpdHk6IDAuODsgLyogRmlyZWZveCAqL1xyXG59XHJcblxyXG46LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsgLyogSW50ZXJuZXQgRXhwbG9yZXIgMTAtMTEgKi9cclxuICBjb2xvcjogbGlnaHQ7XHJcbn1cclxuXHJcbjo6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsgLyogTWljcm9zb2Z0IEVkZ2UgKi9cclxuICBjb2xvcjogbGlnaHQ7XHJcbn0iLCI6OnBsYWNlaG9sZGVyIHtcbiAgLyogQ2hyb21lLCBGaXJlZm94LCBPcGVyYSwgU2FmYXJpIDEwLjErICovXG4gIGNvbG9yOiBsaWdodDtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBvcGFjaXR5OiAwLjg7XG4gIC8qIEZpcmVmb3ggKi9cbn1cblxuOi1tcy1pbnB1dC1wbGFjZWhvbGRlciB7XG4gIC8qIEludGVybmV0IEV4cGxvcmVyIDEwLTExICovXG4gIGNvbG9yOiBsaWdodDtcbn1cblxuOjotbXMtaW5wdXQtcGxhY2Vob2xkZXIge1xuICAvKiBNaWNyb3NvZnQgRWRnZSAqL1xuICBjb2xvcjogbGlnaHQ7XG59Il19 */"]
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"]],
+      styles: ["[_ngcontent-%COMP%]::-webkit-input-placeholder {\n  \n  color: light;\n  font-style: italic;\n  opacity: 0.8;\n  \n}\n\n[_ngcontent-%COMP%]::-moz-placeholder {\n  \n  color: light;\n  font-style: italic;\n  opacity: 0.8;\n  \n}\n\n[_ngcontent-%COMP%]::-ms-input-placeholder {\n  \n  color: light;\n  font-style: italic;\n  opacity: 0.8;\n  \n}\n\n[_ngcontent-%COMP%]::placeholder {\n  \n  color: light;\n  font-style: italic;\n  opacity: 0.8;\n  \n}\n\n[_ngcontent-%COMP%]:-ms-input-placeholder {\n  \n  color: light;\n}\n\n[_ngcontent-%COMP%]::-ms-input-placeholder {\n  \n  color: light;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVpL3NyYy9hcHAvc2VhcmNoL0M6XFxVc2Vyc1xcdGhlXFxQeWNoYXJtUHJvamVjdHNcXHdpcnZzdmlydXNfemlwL3VpXFxzcmNcXGFwcFxcc2VhcmNoXFxzZWFyY2guY29tcG9uZW50LnNjc3MiLCJ1aS9zcmMvYXBwL3NlYXJjaC9zZWFyY2guY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFBZ0IseUNBQUE7RUFDZCxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQWMsWUFBQTtBQ0doQjs7QUROQTtFQUFnQix5Q0FBQTtFQUNkLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFBYyxZQUFBO0FDR2hCOztBRE5BO0VBQWdCLHlDQUFBO0VBQ2QsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtFQUFjLFlBQUE7QUNHaEI7O0FETkE7RUFBZ0IseUNBQUE7RUFDZCxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQWMsWUFBQTtBQ0doQjs7QURBQTtFQUF5Qiw0QkFBQTtFQUN2QixZQUFBO0FDSUY7O0FEREE7RUFBMEIsbUJBQUE7RUFDeEIsWUFBQTtBQ0tGIiwiZmlsZSI6InVpL3NyYy9hcHAvc2VhcmNoL3NlYXJjaC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjo6cGxhY2Vob2xkZXIgeyAvKiBDaHJvbWUsIEZpcmVmb3gsIE9wZXJhLCBTYWZhcmkgMTAuMSsgKi9cclxuICBjb2xvcjogbGlnaHQ7XHJcbiAgZm9udC1zdHlsZTogaXRhbGljO1xyXG4gIG9wYWNpdHk6IDAuODsgLyogRmlyZWZveCAqL1xyXG59XHJcblxyXG46LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsgLyogSW50ZXJuZXQgRXhwbG9yZXIgMTAtMTEgKi9cclxuICBjb2xvcjogbGlnaHQ7XHJcbn1cclxuXHJcbjo6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsgLyogTWljcm9zb2Z0IEVkZ2UgKi9cclxuICBjb2xvcjogbGlnaHQ7XHJcbn0iLCI6OnBsYWNlaG9sZGVyIHtcbiAgLyogQ2hyb21lLCBGaXJlZm94LCBPcGVyYSwgU2FmYXJpIDEwLjErICovXG4gIGNvbG9yOiBsaWdodDtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBvcGFjaXR5OiAwLjg7XG4gIC8qIEZpcmVmb3ggKi9cbn1cblxuOi1tcy1pbnB1dC1wbGFjZWhvbGRlciB7XG4gIC8qIEludGVybmV0IEV4cGxvcmVyIDEwLTExICovXG4gIGNvbG9yOiBsaWdodDtcbn1cblxuOjotbXMtaW5wdXQtcGxhY2Vob2xkZXIge1xuICAvKiBNaWNyb3NvZnQgRWRnZSAqL1xuICBjb2xvcjogbGlnaHQ7XG59Il19 */"]
     });
     /*@__PURE__*/
 
@@ -1171,7 +1203,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: _source_service__WEBPACK_IMPORTED_MODULE_1__["SourceService"]
+          type: _source_service__WEBPACK_IMPORTED_MODULE_2__["SourceService"]
         }];
       }, null);
     })();
@@ -1180,15 +1212,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/source.service.ts":
-  /*!***********************************!*\
-    !*** ./src/app/source.service.ts ***!
-    \***********************************/
+  "./ui/src/app/source.service.ts":
+  /*!**************************************!*\
+    !*** ./ui/src/app/source.service.ts ***!
+    \**************************************/
 
   /*! exports provided: SourceService */
 
   /***/
-  function srcAppSourceServiceTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcAppSourceServiceTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -1264,15 +1296,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/environments/environment.ts":
-  /*!*****************************************!*\
-    !*** ./src/environments/environment.ts ***!
-    \*****************************************/
+  "./ui/src/environments/environment.ts":
+  /*!********************************************!*\
+    !*** ./ui/src/environments/environment.ts ***!
+    \********************************************/
 
   /*! exports provided: environment */
 
   /***/
-  function srcEnvironmentsEnvironmentTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcEnvironmentsEnvironmentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -1302,15 +1334,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/main.ts":
-  /*!*********************!*\
-    !*** ./src/main.ts ***!
-    \*********************/
+  "./ui/src/main.ts":
+  /*!************************!*\
+    !*** ./ui/src/main.ts ***!
+    \************************/
 
   /*! no exports provided */
 
   /***/
-  function srcMainTs(module, __webpack_exports__, __webpack_require__) {
+  function uiSrcMainTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -1325,13 +1357,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! ./environments/environment */
-    "./src/environments/environment.ts");
+    "./ui/src/environments/environment.ts");
     /* harmony import */
 
 
     var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./app/app.module */
-    "./src/app/app.module.ts");
+    "./ui/src/app/app.module.ts");
     /* harmony import */
 
 
@@ -1352,17 +1384,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
   /***/
   0:
-  /*!***************************!*\
-    !*** multi ./src/main.ts ***!
-    \***************************/
+  /*!******************************!*\
+    !*** multi ./ui/src/main.ts ***!
+    \******************************/
 
   /*! no static exports found */
 
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\the\PycharmProjects\wirvsvirus_zip\angular_src\src\main.ts */
-    "./src/main.ts");
+    /*! C:\Users\the\PycharmProjects\wirvsvirus_zip\ui\src\main.ts */
+    "./ui/src/main.ts");
     /***/
   }
 }, [[0, "runtime", "vendor"]]]);
