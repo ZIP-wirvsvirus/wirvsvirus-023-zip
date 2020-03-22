@@ -1,7 +1,7 @@
 <div class="container-fluid pt-3 pb-3">
     <div class="row">
         <div class="col">
-            <div class="jumbotron">
+            <div class="jumbotron search">
                 <div id="search-filters" class="pt-3 text-center">
                     <span *ngFor="let filter of filters; index as i; first as isFirst">
                         <button type="button" class="btn btn-sm btn-outline-secondary mr-2 ml-2" (click)="toggleFilter(filter)">{{filter}}</button>
