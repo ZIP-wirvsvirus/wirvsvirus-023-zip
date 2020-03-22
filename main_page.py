@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, send_from_directory
 
+from crawler.CrawlerManager import CrawlerManager
 from crawler.warnungBund import BundCrawler
 from database.db import db
 
@@ -12,10 +13,15 @@ def main_index():
     return render_template('index.html'), 200
 
 
+@main_page.route("/search")
+def main_search():
+    return render_template('index.html'), 200
+
+
 @main_page.route("/do_crawl")  # TODO this should be done outside this context, best would be different app...
 def do_crawl():
-    x = BundCrawler()
-    x.collect_and_commit(db)
+    x = CrawlerManager()
+    x.crawl_all(db)
     return render_template('index.html'), 200
 
 

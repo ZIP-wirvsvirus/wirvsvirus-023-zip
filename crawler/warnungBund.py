@@ -2,12 +2,13 @@
 from datetime import datetime
 import requests
 
+from crawler.Crawler import Crawler
 from database.models import NewsEntry
 
 URL = "https://warnung.bund.de/bbk.mowas/gefahrendurchsagen.json"
 
 
-class BundCrawler:
+class BundCrawler(Crawler):
     def __init__(self):
         self.result = []
 
