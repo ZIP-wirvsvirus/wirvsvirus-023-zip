@@ -99,6 +99,7 @@ export class SearchComponent implements OnInit {
   loadArticle(name: string) {
     this.sourceService.getArticle(name).subscribe((resp: any) =>
       {
+          resp.sourceName = name.split("assets/data/content/")[1];
           this.loadedArticles.push(resp);
           this.previewArticles.push(resp);
       }

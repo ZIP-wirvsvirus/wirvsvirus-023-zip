@@ -1,0 +1,28 @@
+<div class="text-left pt-3 pb-3">
+    <button type="button" class="btn btn-secondary btn-sm" routerLink="/search" >Zurück zur Suche</button>
+</div>
+<div class="container-fluid pt-3 pb-3">
+    <div class="row">
+        <div class="col text-center">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <h1 class="display-5">{{this.article['headline']}}</h1>
+                    <div class="container-fluid pt-3 pb-3">
+                        <div class="row">
+                            <div class="col text-left">
+                                <span>Autor: unbekannt</span>
+                            </div>
+                            <div class="col text-right">
+                                <span>Quelle: Bundesamt für Bevölkerungsschutz und Katastrophenhilfe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>
+                        {{this.article['content']}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
