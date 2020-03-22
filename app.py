@@ -7,11 +7,6 @@ from database.db import db
 from api.endpoint import endpoint
 
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
-
 def main(cfg=Config):
     app = Flask(__name__)
     app.config.from_object(cfg)  # Choose from the different configs...
@@ -21,6 +16,12 @@ def main(cfg=Config):
 
 
 app = main()
+
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
 
 if __name__ == "__main__":
     app = main()
