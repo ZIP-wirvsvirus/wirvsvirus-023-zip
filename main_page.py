@@ -12,11 +12,6 @@ def main_index():
     return render_template('index.html'), 200
 
 
-@main_page.route("/search")
-def main_search():
-    return render_template('index.html'), 200
-
-
 @main_page.route("/do_crawl")  # TODO this should be done outside this context, best would be different app...
 def do_crawl():
     x = CrawlerManager()
@@ -32,3 +27,8 @@ def get_js(path):
 @main_page.route("/assets/<path:path>")
 def get_assets(path):
     return send_from_directory('dist/team23zip/assets', path)
+
+
+@main_page.route('/<path:path>')
+def fallback(path):
+    return render_template('index.html')
