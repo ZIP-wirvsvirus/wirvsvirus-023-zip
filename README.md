@@ -1,3 +1,5 @@
+###### Das Projekt ist tot und bevor dieses Repo und die Organisation dahinter komplett gelöscht werden, verweise ich auf den [Clone](https://github.com/ValorNaram/wirvsvirus-023-zip)
+
 Backend for wirvsvirus-023-zip
 ---
 Getting started:
